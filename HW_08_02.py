@@ -59,10 +59,16 @@ class Cell:
         return result
 
 
-cell = Cell(24)
-cell_2 = Cell(2)
-print(cell + cell_2)
-print(cell - cell_2)
-print(cell / cell_2)
-print(cell * cell_2)
-print(cell.make_order(7))
+cell1 = Cell(30)
+cell2 = Cell(25)
+cell3 = Cell(10)
+cell4 = Cell(15)
+print(f'cell1 + cell2: {cell1 + cell2}')
+print(f'cell2 - cell1: {cell2 - cell1}')
+print(f'cell4 - cell3: {cell4 - cell3}')
+print(f'cell2 * cell1: {cell2 * cell1}')
+print(f'cell1 / cell2: {cell1 - cell2}')
+print()
+print("Организация ячеек по рядам")
+print(cell1.make_order(5))
+print(cell2.make_order(10))
